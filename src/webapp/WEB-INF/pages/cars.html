@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cars</title>
+</head>
+<body>
+
+
+    <h1>List cars</h1>
+    <table>
+        <tr>
+            <th> ID </th>
+            <th> MODEL </th>
+            <th> YEAR </th>
+        </tr>
+            <tr th:each="car:${printCar}">
+
+          <td th:text="${car.getId}">ID </td>
+            <td th:text="${car.model}">MODEL</td>
+            <td th:text="${car.year}">YEAR</td>
+        </tr>
+</table>
+</body>
+</html>
